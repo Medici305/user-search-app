@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import "./components/variables";
+@import "./components/reboot";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  background: $blue-dark;
+}
+
+.container-fluid {
+  min-height: 100vh;
+  background-color: $white-grey;
+  .wallpaper {
+    //min-height: 75vh;
+    :first-child {
+    }
+  }
+}

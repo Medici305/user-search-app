@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/* Light Mode */
+/* Dark Mode */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/* Light Mode */
+/* Dark Mode */
+body {
+  line-height: 1.563rem;
+  background-color: #f6f8ff;
+  font-family: "Space Mono" !important;
+}
+
+h1 {
+  font-weight: bold !important;
+  font-size: 1.625rem !important;
+  color: black;
+  line-height: 2.375rem !important;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 2.063rem;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 0.813rem !important;
+  font-weight: bold !important;
+  line-height: 1.25rem !important;
+  text-transform: uppercase !important;
+  color: #697c9a !important;
+  margin: 0 !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  color: white;
+  background: #0079ff;
+}
+
+.container-fluid {
+  min-height: 100vh;
+  background-color: #f6f8ff;
+}
+
+/*# sourceMappingURL=style.css.map */
