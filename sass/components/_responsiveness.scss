@@ -1,0 +1,20 @@
+/* Tablet View */
+@media only screen and (max-width: 992px) {
+  .wallpaper {
+    .top {
+      .date-joined {
+        text-align: left !important;
+      }
+    }
+    .bottom {
+      //min-height: 20vh;
+    }
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 578px) {
+  .wallpaper {
+    min-height: 90vh !important;
+  }
+}

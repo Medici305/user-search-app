@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-@import "../components/variables";  
+@import "../components/variables";
 
 body {
   line-height: 1.563rem;
   background-color: $white-grey;
   font-family: "Space Mono" !important;
+}
+
+input {
+  border: none !important;
+  height: 100% !important;
+  outline: none !important;
+}
+
+input:focus{
+    outline: none !important; 
 }
 
 h1 {
@@ -31,9 +41,9 @@ h3 {
 
 h4 {
   font-size: 0.813rem !important;
-  font-weight: bold !important;
+  font-weight: 600 !important;
   line-height: 1.25rem !important;
-  text-transform: uppercase !important;
+  letter-spacing: .1rem;
   color: $blue-grey !important;
   margin: 0 !important;
 }

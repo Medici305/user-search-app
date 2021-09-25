@@ -19,26 +19,93 @@
           <div class="col-6">
             <h1>devfinder</h1>
           </div>
-          <div class="col-4 col-sm-2 d-flex justify-content-between align-items-center">
+          <div class="col-3 col-md-2 d-flex justify-content-between align-items-center">
             <h4>dark</h4>
             <img src="./images/icon-moon.svg" alt="moon">
           </div>
 
         </div>
         <!-- 2. Input and search button  -->
-        <div class="row mb-4 shadow" style='min-height: 10vh; border-radius: 1rem; background-color: white;'>
-
+        <div class="row mb-4 shadow py-2" style='border-radius: 1rem; background-color: white;'>
+          <!-- 2.1 Search icon -->
+          <div class="col-1 d-flex justify-content-center align-items-center">
+            <img src="./images/icon-search.svg" alt="search-icon">
+          </div>
+          <!-- 2.2 Input Text  -->
+          <div class="col-8 col-sm-9 p-0">
+            <form id="myForm" method="get" autocomplete="off">
+              <input type="text" id='searchInput' class="form-control" placeholder="Search Github username..." aria-label="Github Username">
+            </form>
+          </div>
+          <!-- 2.3 Search button -->
+          <div class="col-3 col-sm-2 d-flex justify-content-center align-items-center" style="padding: 0 .5rem;">
+            <button class="btn submit btn-primary" style="width: 100%; border-radius: .75rem;" type="submit">Search</button>
+          </div>
         </div>
         <!-- 3. Main content display result from search -->
-        <div class="row shadow" style='min-height: 55vh; border-radius: 1rem; background-color: white;'>
+        <div class="row shadow d-flex p-5 justify-content-end" style='border-radius: 1rem; background-color: white;'>
+          <div class="col-3 image d-flex justify-content-center align-items-start">
+              <img class="profile-pic" src="./images/github.png" alt="">
+          </div>
+          <div class="col-9 top">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <h1 class="username">The Octocat</h1>
+                <span class="handle">@asvpmetro</span>
+              </div>
+              <div class="col-12 col-lg-6">
+                <p class="date-joined text-right">Joined 25 jan 2011</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 bottom flex-grow-1">
+                <p class="bio">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae inventore aperiam recusandae ullam saepe dicta corrupti sed soluta id labore?
+                </p>
+                <div class="row py-3 px-3 my-3 stats"  style='border-radius: 1rem'>
+                  <div class="col-4">
+                    <h4>Repos</h4>  
+                    <h1 class="repos">8</h1>
+                  </div>
+                  <div class="col-4">
+                    <h4>Followers</h4>  
+                    <h1 class="followers">3938</h1>
+                  </div>
+                  <div class="col-4">
+                    <h4>Following</h4>  
+                    <h1 class="following">9</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
+                    <img src="./images/icon-location.svg" alt="location">
+                    <p class="location m-0 pl-3"></p>
+                  </div>
+                  <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
+                    <img src="./images/icon-twitter.svg" alt="twitter">
+                    <p class="twitter m-0 pl-3"></p>
+                  </div>
+                  <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
+                    <img src="./images/icon-website.svg" alt="website">
+                    <p class="website m-0 pl-3 text-wrap"></p>
+                  </div>
+                  <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
+                    <img src="./images/icon-company.svg" alt="company">
+                    <p class="company m-0 pl-3"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      </div>
     </div>
   </div>
 
 
 
   <!-- JS bootstrap plugin -->
+  <script src="./app.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @import "./components/variables";
 @import "./components/reboot";
+@import "./components/responsiveness";
+@import "./components/dark-mode";
 
 * {
   padding: 0;
@@ -13,12 +15,40 @@ button {
   background: $blue-dark;
 }
 
+span {
+  color: $blue-dark;
+}
+
+h5 {
+  color: $blue-grey;
+  font-size: 0.75rem;
+}
+
+p {
+  color: $blue-grey;
+}
+
 .container-fluid {
   min-height: 100vh;
   background-color: $white-grey;
   .wallpaper {
-    //min-height: 75vh;
-    :first-child {
+    .profile-pic {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .image {
+      height: 10vh;
+    }
+    .top {
+      //height: 20%;
+    }
+    .bottom {
+      //height: 42vh;
+      .stats {
+        background: $white-grey;
+      }
     }
   }
 }
