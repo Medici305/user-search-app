@@ -17,7 +17,7 @@ input {
 }
 
 input:focus {
-  outline: none !important;
+  outline: none;
 }
 
 h1 {
@@ -34,17 +34,39 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-h4 {
   font-size: 0.813rem !important;
   font-weight: 600 !important;
   line-height: 1.25rem !important;
   letter-spacing: 0.1rem;
   color: #697c9a !important;
   margin: 0 !important;
+}
+
+h4 {
+  font-size: 0.813rem !important;
+  font-weight: bold !important;
+  line-height: 1.25rem !important;
+  text-transform: uppercase !important;
+  color: #697c9a !important;
+  margin: 0 !important;
+}
+
+h5 {
+  color: #697c9a;
+  font-size: 0.75rem;
+}
+
+button {
+  color: white;
+  background: #0079ff;
+}
+
+span {
+  color: #0079ff;
+}
+
+p {
+  color: #697c9a;
 }
 
 /* Tablet View */
@@ -61,25 +83,35 @@ h4 {
 }
 /* Light Mode */
 /* Dark Mode */
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+[data-theme=dark] {
+  color: white;
+}
+
 [data-theme=dark] .container-fluid {
   background-color: #2b3442 !important;
   color: #eee;
 }
 
-[data-theme=dark] .bg-black {
+[data-theme=dark] .content,
+.input-bar {
   background-color: #fff !important;
 }
 
-[data-theme=dark] .bg-dark {
-  background-color: #eee !important;
+[data-theme=dark] .stats {
+  background-color: #2b3442 !important;
 }
 
-[data-theme=dark] .bg-light {
-  background-color: #222 !important;
-}
-
-[data-theme=dark] .bg-white {
-  background-color: #000 !important;
+[data-theme=dark] img,
+svg {
+  color: black !important;
 }
 
 * {
@@ -88,27 +120,12 @@ h4 {
   box-sizing: border-box;
 }
 
-button {
-  color: white;
-  background: #0079ff;
-}
-
-span {
-  color: #0079ff;
-}
-
-h5 {
-  color: #697c9a;
-  font-size: 0.75rem;
-}
-
-p {
-  color: #697c9a;
-}
-
 .container-fluid {
   min-height: 100vh;
   background-color: #f6f8ff;
+}
+.container-fluid .wallpaper #darkSwitch {
+  cursor: pointer;
 }
 .container-fluid .wallpaper .profile-pic {
   width: 100%;

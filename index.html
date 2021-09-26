@@ -19,20 +19,20 @@
           <div class="col-6">
             <h1>devfinder</h1>
           </div>
-          <div class="col-3 col-md-2 d-flex justify-content-between align-items-center">
+          <div id='darkSwitch' class="col-4 col-md-2 d-flex justify-content-between align-items-center">
             <h4>dark</h4>
-            <img src="./images/icon-moon.svg" alt="moon">
+            <img class='inverted' src="./images/icon-moon.svg" alt="moon">
           </div>
 
         </div>
         <!-- 2. Input and search button  -->
-        <div class="row mb-4 shadow py-2" style='border-radius: 1rem; background-color: white;'>
+        <div class="row mb-4 input-bar justify-content-center shadow py-2 px-1 px-sm-0" style='border-radius: 1rem; background-color: white;'>
           <!-- 2.1 Search icon -->
           <div class="col-1 d-flex justify-content-center align-items-center">
-            <img src="./images/icon-search.svg" alt="search-icon">
+            <img class='inverted' src="./images/icon-search.svg" alt="search-icon">
           </div>
           <!-- 2.2 Input Text  -->
-          <div class="col-8 col-sm-9 p-0">
+          <div class="col-7 col-sm-9 p-0">
             <form id="myForm" method="get" autocomplete="off">
               <input type="text" id='searchInput' class="form-control" placeholder="Search Github username..." aria-label="Github Username">
             </form>
@@ -43,9 +43,9 @@
           </div>
         </div>
         <!-- 3. Main content display result from search -->
-        <div class="row shadow d-flex p-5 justify-content-end" style='border-radius: 1rem; background-color: white;'>
+        <div class="row shadow d-none p-5 content justify-content-end" style='border-radius: 1rem; background-color: white;'>
           <div class="col-3 image d-flex justify-content-center align-items-start">
-              <img class="profile-pic" src="./images/github.png" alt="">
+              <img class="profile-pic inverted" src="./images/github.png" alt="">
           </div>
           <div class="col-9 top">
             <div class="row">
@@ -64,33 +64,33 @@
                 </p>
                 <div class="row py-3 px-3 my-3 stats"  style='border-radius: 1rem'>
                   <div class="col-4">
-                    <h4>Repos</h4>  
+                    <h3>Repos</h3>  
                     <h1 class="repos">8</h1>
                   </div>
                   <div class="col-4">
-                    <h4>Followers</h4>  
+                    <h3>Followers</h3>  
                     <h1 class="followers">3938</h1>
                   </div>
                   <div class="col-4">
-                    <h4>Following</h4>  
+                    <h3>Following</h3>  
                     <h1 class="following">9</h1>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-                    <img src="./images/icon-location.svg" alt="location">
+                    <img class='inverted' src="./images/icon-location.svg" alt="location">
                     <p class="location m-0 pl-3"></p>
                   </div>
                   <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-                    <img src="./images/icon-twitter.svg" alt="twitter">
+                    <img class='inverted' src="./images/icon-twitter.svg" alt="twitter">
                     <p class="twitter m-0 pl-3"></p>
                   </div>
                   <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-                    <img src="./images/icon-website.svg" alt="website">
-                    <p class="website m-0 pl-3 text-wrap"></p>
+                    <img class='inverted' src="./images/icon-website.svg" alt="website">
+                    <p class="website m-0 pl- text-break"></p>
                   </div>
                   <div class="col-12 col-lg-6 py-2 d-flex align-items-center">
-                    <img src="./images/icon-company.svg" alt="company">
+                    <img class='inverted' src="./images/icon-company.svg" alt="company">
                     <p class="company m-0 pl-3"></p>
                   </div>
                 </div>
@@ -98,11 +98,8 @@
             </div>
           </div>
         </div>
-
     </div>
   </div>
-
-
 
   <!-- JS bootstrap plugin -->
   <script src="./app.js"></script>
@@ -112,30 +109,3 @@
 
 </body>
 </html>
-
-
-
-
-
-<!--
-
-
-  <div class="container border border-warning">
-    <div class="row align-items-center justify-content-center h-100 border border-teal">
-      <div class="col-8 border border-dark h-75">
-
-        <div class="row">
-          <div class="col">
-            <h1>devfinder</h1>
-          </div>
-          <div class="col border border-danger d-flex justify-content-end">
-            <h4>Dark</h4>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
--->

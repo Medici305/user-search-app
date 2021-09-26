@@ -13,8 +13,8 @@ input {
   outline: none !important;
 }
 
-input:focus{
-    outline: none !important; 
+input:focus {
+  outline: none;
 }
 
 h1 {
@@ -35,15 +35,37 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.813rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25rem !important;
+  letter-spacing: 0.1rem;
+  color: $blue-grey !important;
+  margin: 0 !important;
 }
 
 h4 {
   font-size: 0.813rem !important;
-  font-weight: 600 !important;
+  font-weight: bold !important;
   line-height: 1.25rem !important;
-  letter-spacing: .1rem;
+  text-transform: uppercase !important;
   color: $blue-grey !important;
   margin: 0 !important;
+}
+
+h5 {
+  color: $blue-grey;
+  font-size: 0.75rem;
+}
+
+button {
+  color: white;
+  background: $blue-dark;
+}
+
+span {
+  color: $blue-dark;
+}
+
+p {
+  color: $blue-grey;
 }

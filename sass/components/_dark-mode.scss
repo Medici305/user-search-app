@@ -1,29 +1,32 @@
 @import "./variables";
 
-$blue-light: #0079ff;
-$blue-grey: #697c9a;
-$dark-blue-light: #4b6a9b;
-$blue-black-light: #2b3442;
-$white-grey: #f6f8ff;
-$white-light: #fefefe;
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+[data-theme="dark"] {
+  color: white;
+}
 
 [data-theme="dark"] .container-fluid {
   background-color: $blue-black-light !important;
   color: #eee;
 }
 
-[data-theme="dark"] .bg-black {
+[data-theme="dark"] .content,
+.input-bar {
   background-color: #fff !important;
 }
 
-[data-theme="dark"] .bg-dark {
-  background-color: #eee !important;
+[data-theme="dark"] .stats {
+  background-color: $blue-black-light !important;
 }
 
-[data-theme="dark"] .bg-light {
-  background-color: #222 !important;
-}
-
-[data-theme="dark"] .bg-white {
-  background-color: #000 !important;
+[data-theme="dark"] img,
+svg {
+  color: black !important;
 }

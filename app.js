@@ -2,6 +2,7 @@
 const form = document.getElementById("myForm");
 const searchInput = document.getElementById("searchInput");
 const submitButton = document.querySelector(".submit");
+const darkSwitch = document.getElementById("darkSwitch");
 let searchValue;
 
 // Functions
@@ -44,17 +45,21 @@ const displayData = (data) => {
   repos.innerHTML = data.public_repos;
   following.innerHTML = data.following;
   followers.innerHTML = data.followers;
-  location.innerHTML = data.location;
-  twitter.innerHTML = data.twitter_username;
-  website.innerHTML = data.url;
-  company.innerHTML = data.company;
-  bio.innerHTML = data.bio;
+  location.innerHTML = data.location || "Not Available";
+  twitter.innerHTML = data.twitter_username || "Not Available";
+  website.innerHTML = data.url || "Not Available";
+  company.innerHTML = data.company || "Not Available";
+  bio.innerHTML = data.bio || "No Bio Available";
 };
 
 const retrieveData = async () => {
   const newValue = searchValue.split(" ").join("");
   searchInput.value = "";
   let returnedData = await fetchData(newValue);
+  if (returnedData) {
+    document.querySelector(".content").classList.remove("d-none");
+    document.querySelector(".content").classList.add("d-flex");
+  }
   displayData(returnedData);
 };
 
@@ -71,4 +76,20 @@ submitButton.addEventListener("click", function (e) {
 
 searchInput.addEventListener("input", (e) => {
   searchValue = e.target.value;
+});
+
+darkSwitch.addEventListener("click", (e) => {
+  document.documentElement.classList.toggle("dark-mode");
+  document.querySelectorAll(".inverted").forEach((result) => {
+    result.classList.toggle(".invert");
+  });
+
+  darkSwitch.classList.toggle("dark-mode");
+  if (darkSwitch.classList.contains("dark-mode")) {
+    darkSwitch.children[0].innerHTML = "Light";
+    darkSwitch.children[1].src = "./images/icon-sun.svg";
+  } else {
+    darkSwitch.children[0].innerHTML = "Dark";
+    darkSwitch.children[1].src = "./images/icon-moon.svg";
+  }
 });
